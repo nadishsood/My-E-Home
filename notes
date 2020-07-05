@@ -1,0 +1,13 @@
+-npm build
+-src - pages - index.js contains react component that renders the homepage. 
+-this is the directory that gatsby looks for static files that
+our website needs. 
+-Dont use anchor tag to link pages - will cause refresh and fetch etc etc, use Link that
+comes with gatsby. 
+
+ 36:
+ components directory has no special meaning
+
+
+56: 
+styling gatsby content
