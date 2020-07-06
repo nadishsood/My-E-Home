@@ -1,4 +1,4 @@
--npm build
+ -npm build
 -src - pages - index.js contains react component that renders the homepage. 
 -this is the directory that gatsby looks for static files that
 our website needs. 
@@ -12,4 +12,20 @@ comes with gatsby.
 56: 
 styling gatsby content
 
-1: 31:  
+1:47 replacing qraphiql
+by creating an environment variable
+
+
+the filesystem array needs more config than the sass plugin
+
+npm install --save gatsby-transformer-remark
+ this is used to parse markdown files in order to render them. 
+ we can use our graphql api to do that. 
+
+we need a slug for each post from the filename in order to create a route. 
+
+gatsby-node js is the node api that gatsby exposes
+it'll be used for slugs and dynamically creating the blog posts. 
+we will use onCreateNode  
+
+Node is a data structure for storing our gatsby data

@@ -7,10 +7,18 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Nadish Sood", 
-    author: "Nadish Sood"
-  }, 
+    title: "Nadish Sood",
+    author: "Nadish Sood",
+  },
   plugins: [
-    'gatsby-plugin-sass'
+    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    }, 
+    'gatsby-transformer-remark'
   ],
 }
