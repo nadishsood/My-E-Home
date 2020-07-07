@@ -23,7 +23,7 @@ const BlogPage = () => {
     }
   `)
   return (
-    <div>
+    <div> 
       <Layout>
         <h1>Blog</h1>
         <ol className={blogStyles.posts}>

@@ -29,3 +29,7 @@ it'll be used for slugs and dynamically creating the blog posts.
 we will use onCreateNode  
 
 Node is a data structure for storing our gatsby data
+
+
+a library is needed to render the body of our blog posts. 
+its called rich-text-react-renderer - which returns a single function.
