@@ -9,12 +9,19 @@ const IndexPage = () => {
 
     <Layout>
       <Head title="home"/>
-      <h1>Hello</h1>
-      <h4>
+      <h2>Hello, </h2>
+      {/* <h4>
         I'm Nadish a full stack web developer living in Gainesville, Florida.{" "}
-      </h4>
+      </h4> */}
+      <p> 
+        {/* Welcome to my website. You can view my projects,  read my blogs. 
+        This website is built on Gatsby and Netlify and is meant to be blazingly fast. Enjoy your experience.  */}
+        I'm a CS grad student at the University of Florida. 
+        Also a software engineer, web developer, photographer, writer and human - in that order. 
+      </p>
+      <p>This is the tech that I work with:   </p>
       <p>
-        Need a developer? <Link to="/contact">Contact me.</Link>
+        {/* Need a developer? <Link to="/contact">Contact me.</Link> */}
       </p>
     </Layout>
   )
