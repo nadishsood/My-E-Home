@@ -17,6 +17,7 @@
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "contentful": "^7.14.5",
     "gatsby": "^2.23.12",
+    "gatsby-plugin-react-helmet": "^3.3.9",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-plugin-sharp": "^2.6.18",
     "gatsby-remark-images": "^3.3.17",
@@ -26,7 +27,8 @@
     "gatsby-transformer-remark": "^2.8.23",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",

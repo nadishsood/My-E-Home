@@ -2,7 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Head from '../components/head';
 
 //gatsby grabs the query, runs it and provides the response as a prop to our component
 // export const query = graphql`
@@ -42,6 +43,7 @@ const Blog=(props)=>{
     }
     return (
       <Layout>
+          <Head title={props.data.contentfulBlogPost.title}/>
         <h1>{props.data.contentfulBlogPost.title}</h1>
         <p>{props.data.contentfulBlogPost.publishedOn}</p>
         {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}

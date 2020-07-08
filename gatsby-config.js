@@ -7,7 +7,7 @@
  require("dotenv").config({
    path: `.env.${process.env.NODE_ENV}`,
  })
- 
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -15,6 +15,7 @@ module.exports = {
     author: "Nadish Sood",
   },
   plugins: [
+    "gatsby-plugin-react-helmet", 
     {
       resolve: `gatsby-source-contentful`,
       options: {
