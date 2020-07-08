@@ -13,6 +13,19 @@ const path = require("path");
 //     }
 // }
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        "../../theme.config$": path.join(
+          __dirname,
+          "src/semantic/theme.config"
+        ),
+      },
+    },
+  })
+}
+
 module.exports.createPages = async ({graphql, actions}) => {
         const { createPage } = actions
         const blogTemplate = path.resolve("./src/templates/blog.js")

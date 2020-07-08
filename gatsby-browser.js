@@ -1,0 +1,1 @@
+import "./src/assets/fomantic/dist/semantic.css";

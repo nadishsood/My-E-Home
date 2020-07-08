@@ -15,6 +15,7 @@ module.exports = {
     author: "Nadish Sood",
   },
   plugins: [
+    `gatsby-plugin-less`, 
     "gatsby-plugin-react-helmet", 
     {
       resolve: `gatsby-source-contentful`,
