@@ -6,6 +6,9 @@ import Layout from "./../components/layout";
 import Head from '../components/head';
 import { Container, Item } from 'semantic-ui-react';
 
+import indexStyles from "./index.module.scss"
+
+
 
 const IndexPage = () => {
 
@@ -30,21 +33,22 @@ const IndexPage = () => {
 
 
   let renderIndividualSkillList =(arr)=>{
-
+    let url="";
 
     return arr.map((node)=>{
-      console.log(node);
+
+      if(node.icon){
+        url = node.icon.file.url;
+      }
+      
       
       return (
-        <div className="item">
-          <img
-              className="ui avatar image"
-              src=""
-            ></img>
-        <div className="content">
+        <div className={`${indexStyles.skill} item`}>
+          <img className="ui avatar image" src={url}></img>
+          <div className="content">
+            {/* <p className="gg">{node.name}</p> */}
+
             <p className="header">{node.name}</p>
-           
-            
           </div>
         </div>
       )
@@ -85,13 +89,11 @@ const IndexPage = () => {
 
     return combinedArray.map((arr)=>{
       return (
-        <Container>
-          <div className="ui horizontal list">
-             {renderIndividualSkillList(arr)}
+        <div className={indexStyles.horizontalContainer}>
+          <div className="ui relaxed horizontal tiny list">
+            {renderIndividualSkillList(arr)}
           </div>
-          <br />
-          <br />
-        </Container>
+        </div>
       )
       
     })
@@ -104,94 +106,16 @@ const IndexPage = () => {
       {/* <h4>
         I'm Nadish a full stack web developer living in Gainesville, Florida.{" "}
       </h4> */}
-      <p>
+      <p className={indexStyles.intro}>
         {/* Welcome to my website. You can view my projects,  read my blogs. 
         This website is built on Gatsby and Netlify and is meant to be blazingly fast. Enjoy your experience.  */}
         I'm a CS grad student at the University of Florida. Also a software
         engineer, web developer, photographer, writer and human - in that order.
-      </p>
-      <p>This is the tech that I work with: </p>
-      <p>{/* Need a developer? <Link to="/contact">Contact me.</Link> */}</p>
-      {displaySkillist()}
-      {/* <Container>
-
-        <div className="ui horizontal list">
-          <div className="item">
-            <img
-              className="ui avatar image"
-              src="/images/avatar2/small/rachel.png"
-            ></img>
-            <div className="content">
-              <p className="header">React</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <img
-              className="ui avatar image"
-              src="/images/avatar2/small/rachel.png"
-            ></img>
-            <div className="content">
-              <p className="header">React</p>
-            </div>
-          </div>
-        </div>
-      </Container>
-      
-      <Container>
         
-        <div className="ui horizontal list">
-          <div className="item">
-            <img
-              className="ui avatar image"
-              src="/images/avatar2/small/rachel.png"
-            ></img>
-            <div className="content">
-              <p className="header">React</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <img
-              className="ui avatar image"
-              src="/images/avatar2/small/rachel.png"
-            ></img>
-            <div className="content">
-              <p className="header">React</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <img
-              className="ui avatar image"
-              src="/images/avatar2/small/rachel.png"
-            ></img>
-            <div className="content">
-              <p className="header">React</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <img
-              className="ui avatar image"
-              src="/images/avatar2/small/rachel.png"
-            ></img>
-            <div className="content">
-              <p className="header">React</p>
-            </div>
-          </div>
-
-          <div className="item">
-            <img
-              className="ui avatar image"
-              src="/images/avatar2/small/rachel.png"
-            ></img>
-            <div className="content">
-              <p className="header">React</p>
-            </div>
-          </div>
-        </div>
-      </Container> */}
+      </p>
+      <p className={indexStyles.skillsHeading}>My Ninja Tech Skills </p>
+      <p>{/* Need a developer? <Link to="/contact">Contact me.</Link> */}</p>
+      <div className={indexStyles.container}>{displaySkillist()}</div>
     </Layout>
   )
 }
