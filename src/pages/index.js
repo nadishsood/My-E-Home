@@ -31,11 +31,20 @@ const IndexPage = () => {
 
   let renderIndividualSkillList =(arr)=>{
 
+
     return arr.map((node)=>{
+      console.log(node);
+      
       return (
         <div className="item">
+          <img
+              className="ui avatar image"
+              src=""
+            ></img>
         <div className="content">
             <p className="header">{node.name}</p>
+           
+            
           </div>
         </div>
       )
@@ -47,40 +56,41 @@ const IndexPage = () => {
     let fe = [];
     let be = [];
     let cs = [];
+    let db=[];
     let combinedArray = [];
 
     data.allContentfulSkill.edges.map((edge)=>{
       switch (edge.node.category) {
         case "Language":
-          language.push(edge);
-          break;
+          language.push(edge.node)
+          break
         case "FE":
           fe.push(edge.node)
           break;
         case "BE":
-          be.push(edge.node);
+          be.push(edge.node)
+          break;
+        case "DB":
+          db.push(edge.node)
           break;
         case "CS":
-          cs.push(edge.node);
-          break;
+          cs.push(edge.node)
+          break
         default:
-          break;
-          
+          break
       }
     })
-    console.log(language);
-    combinedArray.push(language, fe, be, cs);
+    combinedArray.push(language, fe, be, db, cs);
 
 
     return combinedArray.map((arr)=>{
       return (
-  
         <Container>
           <div className="ui horizontal list">
-
-x          {renderIndividualSkillList(arr)}
+             {renderIndividualSkillList(arr)}
           </div>
-
+          <br />
+          <br />
         </Container>
       )
       
