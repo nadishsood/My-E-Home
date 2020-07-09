@@ -44,65 +44,46 @@ const ProjectPage = (props) => {
         <Head title="projects" />
 
         <h1 className={projectStyles.projectHeader}>Projects</h1>
-        <div className={projectStyles.itemsContainer}>
-          <div class="ui items">
-            <div class="item">
-              <div class="image">
-                <img src="/images/wireframe/image.png" />
-              </div>
-              <div class="content">
-                <a class="header">Header</a>
-                <div class="meta">
-                  <span>Description</span>
-                </div>
-                <div class="description">
-                  <p></p>
-                </div>
-                <div class="extra">Additional Details</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className={projectStyles.itemsContainer}>
-          <div class="ui items">
-            <div class="item">
-              <div class="image">
-                <img src="/images/wireframe/image.png" />
-              </div>
-              <div class="content">
-                <a class="header">Header</a>
-                <div class="meta">
-                  <span>Description</span>
+          {props.data.allContentfulProject.edges.map((edge)=>{
+            return (
+              <div className={projectStyles.itemsContainer}>
+                <div class="ui items">
+                  <div class="item">
+                    <div class="image">
+                      <img src={edge.node.image.file.url} />
+                    </div>
+                    <div class="content">
+                      <a class="header">{edge.node.name}</a>
+                      <div class="meta">
+                        <span>{edge.node.techUsed.techUsed}</span>
+                      </div>
+                      <div class="description">
+                        <p>
+                          {documentToReactComponents(
+                            edge.node.description.json
+                          )}
+                        </p>
+                      </div>
+                      <div class="extra">
+                        <Link to={edge.node.githubLink}>
+                          <button class="ui black basic button mini">
+                            Github
+                          </button>
+                        </Link>
+                        <Link>
+                          <button class="ui green basic button mini">
+                            View Live
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="description">
-                  <p></p>
-                </div>
-                <div class="extra">Additional Details</div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className={projectStyles.itemsContainer}>
-
-        <div class="ui items">
-          <div class="item">
-            <div class="image">
-              <img src="/images/wireframe/image.png" />
-            </div>
-            <div class="content">
-              <a class="header">Header</a>
-              <div class="meta">
-                <span>Description</span>
-              </div>
-              <div class="description">
-                <p></p>
-              </div>
-              <div class="extra">Additional Details</div>
-            </div>
-          </div>
-        </div>
-        </div>
+            )
+         
+          })}
       </Layout>
     </div>
   )

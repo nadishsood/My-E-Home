@@ -84,6 +84,11 @@ const IndexPage = () => {
           break
       }
     })
+    language = language.reverse();
+    fe= fe.reverse();
+    be= be.reverse();
+    db = db.reverse();
+    cs=cs.reverse();
     combinedArray.push(language, fe, be, db, cs);
 
 
@@ -111,11 +116,11 @@ const IndexPage = () => {
         This website is built on Gatsby and Netlify and is meant to be blazingly fast. Enjoy your experience.  */}
         I'm a CS grad student at the University of Florida. Also a software
         engineer, web developer, photographer, writer and human - in that order.
-        
       </p>
       <p className={indexStyles.skillsHeading}>My Tech Ninja Chops </p>
       <p>{/* Need a developer? <Link to="/contact">Contact me.</Link> */}</p>
       <div className={indexStyles.container}>{displaySkillist()}</div>
+      
     </Layout>
   )
 }
