@@ -23,7 +23,25 @@ font-size: 13px;
 }
 .itemsContainer{
     padding-bottom: 60px;
+    width: 100%;
+    background: #F5F9FB
+
 }
 .projectHeader{
-    padding-bottom:0px;
+    font-size: 1.75rem;
+    color: #161718;
+}
+
+.intro{
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: #798188;
+    font-size: 0.9rem;
+    width: 68%;
+}
+.projectBox{
+    height: 70vh;
+    width:70%;
+    margin: 0px auto;
+    padding: 100px;
 }

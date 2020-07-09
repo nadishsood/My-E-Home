@@ -43,20 +43,18 @@ const ProjectPage = (props) => {
       <Layout>
         <Head title="projects" />
 
-        <h1 className={projectStyles.projectHeader}>Projects</h1>
+        <h2 className={projectStyles.projectHeader}>Projects</h2>
 
-        <p> 
-          My projects represent work across
-          Front-end, Back-end, User-Experience design, Databases and Security. 
+        <p className={projectStyles.intro}>
+          My projects represent work across Front-end, Back-end, User-Experience
+          design, Databases and Security. Below are some of my favorite
+          projects:
         </p>
-        <p>
-        
-        </p>
-        <p>Here are my favorite projects: </p>
-
-        {props.data.allContentfulProject.edges.map(edge => {
-          return (
-            <div className={projectStyles.itemsContainer}>
+      </Layout>
+      {props.data.allContentfulProject.edges.map(edge => {
+        return (
+          <div className={projectStyles.itemsContainer}>
+            <div className={projectStyles.projectBox}>
               <div class="ui items">
                 <div class="item">
                   <div class="image">
@@ -88,9 +86,9 @@ const ProjectPage = (props) => {
                 </div>
               </div>
             </div>
-          )
-        })}
-      </Layout>
+          </div>
+        )
+      })}
     </div>
   )
 }
