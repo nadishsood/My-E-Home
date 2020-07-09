@@ -113,7 +113,7 @@ const IndexPage = () => {
         engineer, web developer, photographer, writer and human - in that order.
         
       </p>
-      <p className={indexStyles.skillsHeading}>My Ninja Tech Skills </p>
+      <p className={indexStyles.skillsHeading}>My Tech Ninja Chops </p>
       <p>{/* Need a developer? <Link to="/contact">Contact me.</Link> */}</p>
       <div className={indexStyles.container}>{displaySkillist()}</div>
     </Layout>
