@@ -107,20 +107,17 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="home" />
-      <h2>Hello, </h2>
-      {/* <h4>
-        I'm Nadish a full stack web developer living in Gainesville, Florida.{" "}
-      </h4> */}
+      <h2 className={indexStyles.hi}>Hi, I'm Nadish </h2>
+
       <p className={indexStyles.intro}>
-        {/* Welcome to my website. You can view my projects,  read my blogs. 
-        This website is built on Gatsby and Netlify and is meant to be blazingly fast. Enjoy your experience.  */}
-        I'm a CS grad student at the University of Florida. Also a software
-        engineer, web developer, photographer, writer and human - in that order.
+        I share my love of software-development, technology, photography <br />
+        and writing on this website. I'm currently pursuing my master's in <br />
+        Computer Science at the University of Florida. 
       </p>
       <p className={indexStyles.skillsHeading}>My Tech Ninja Chops </p>
       <p>{/* Need a developer? <Link to="/contact">Contact me.</Link> */}</p>
       <div className={indexStyles.container}>{displaySkillist()}</div>
-      
+     
     </Layout>
   )
 }
@@ -128,20 +125,7 @@ const IndexPage = () => {
 export default IndexPage;
 
 
-//skill
-  //name
-  //icon
-  //category
 
-//categories: My ninja skills: 
-//languages: javascript, java
-//front end: react, redux, react-native, html, css, jquery
-//back end:Node.js, spring boot, Oauth
-//databases: SQL, MongoDB
-//computer science stuff: Design and Analysis of Algorithms
-
-//make an array for each catefgory of skill after fetching all skills from cms
-// and then pass each array to an individual horizontal list component and render the list there nicely and return it.
 
 
 

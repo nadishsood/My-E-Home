@@ -3,8 +3,8 @@
 }
 
 .title{
-    color: #000000;
-    font-size: 3rem;
+    color: #a6a8ab;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -29,3 +29,16 @@
     color: #333333 
 }
 
+.anchor{
+    color: #a6a8ab;
+    font-weight: bold;
+    font-size: 0.9rem
+}
+
+.anchor:hover{
+    color: #666666;
+}
+
+.headerContainer{
+    padding-bottom: 40px;
+}

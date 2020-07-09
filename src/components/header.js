@@ -15,51 +15,87 @@ const Header = () => {
       }
     `)
   return (
-    <header className={headerStyles.header}>
-      <h1>
-        <Link className={headerStyles.title} to="/">
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
-      <ul className={headerStyles.navList}>
-        <li>
-          <Link
-            className={headerStyles.navItem}
-            to="/"
-            activeClassName={headerStyles.activeNavItem}
-          >
-            Home
+    <div className={headerStyles.headerContainer}>
+      <div class="ui text menu">
+        <div class="header item">
+          <Link className={headerStyles.anchor} to="/">
+            Nadish Sood
           </Link>
-        </li>
-        <li>
-          <Link
-            className={headerStyles.navItem}
-            to="/blog"
-            activeClassName={headerStyles.activeNavItem}
-          >
+        </div>
+
+        <div class="right menu">
+          
+          <a class="item">
+            <Link className={headerStyles.anchor} to="/project">
+              Projects
+            </Link>
+          </a>
+          <a class=" item">
+            <Link className={headerStyles.anchor} to="/blog">
+              Blog
+            </Link>
+          </a>
+          <a class="item">
+            <Link className={headerStyles.anchor} to="/contact">
+              Contact
+            </Link>
+          </a>
+
+          {/* <Link to="/blog" class="item">
             Blog
           </Link>
-        </li>
-        <li>
-          <Link
-            className={headerStyles.navItem}
-            to="/project"
-            activeClassName={headerStyles.activeNavItem}
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={headerStyles.navItem}
-            to="/contact"
-            activeClassName={headerStyles.activeNavItem}
-          >
+
+          <Link to="/contact" class="item">
             Contact
+          </Link> */}
+        </div>
+      </div>
+      {/* <header className={headerStyles.header}>
+        <h1>
+          <Link className={headerStyles.title} to="/">
+            {data.site.siteMetadata.title}
           </Link>
-        </li>
-      </ul>
-    </header>
+        </h1>
+        <ul className={headerStyles.navList}>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              to="/"
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              to="/blog"
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              to="/project"
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              to="/contact"
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </header> */}
+    </div>
   )
 }
 

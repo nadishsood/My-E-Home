@@ -45,45 +45,54 @@ const ProjectPage = (props) => {
 
         <h1 className={projectStyles.projectHeader}>Projects</h1>
 
-          {props.data.allContentfulProject.edges.map((edge)=>{
-            return (
-              <div className={projectStyles.itemsContainer}>
-                <div class="ui items">
-                  <div class="item">
-                    <div class="image">
-                      <img src={edge.node.image.file.url} />
+        <p>
+          I'm a graduate Computer Science student at{" "}
+          <span>University of Florida </span> in Gainesville. 
+          I've been working hard to build skills across the spectrum of web, 
+          algorithms, databases, networks and security. 
+        </p>
+        <p>
+          I love focusing on building robust, aesthetic and scalable web applications. 
+          These days the stack I'm using is React, Redux, Node.js and MongoDB. 
+          However, I'm open to and am always excited to work on any language, framework that I can get my hands on. 
+        </p>
+
+        {props.data.allContentfulProject.edges.map(edge => {
+          return (
+            <div className={projectStyles.itemsContainer}>
+              <div class="ui items">
+                <div class="item">
+                  <div class="image">
+                    <img src={edge.node.image.file.url} />
+                  </div>
+                  <div class="content">
+                    <a class="header">{edge.node.name}</a>
+                    <div class="meta">
+                      <span>{edge.node.techUsed.techUsed}</span>
                     </div>
-                    <div class="content">
-                      <a class="header">{edge.node.name}</a>
-                      <div class="meta">
-                        <span>{edge.node.techUsed.techUsed}</span>
-                      </div>
-                      <div class="description">
-                        <p>
-                          {documentToReactComponents(
-                            edge.node.description.json
-                          )}
-                        </p>
-                      </div>
-                      <div class="extra">
-                        <Link to={edge.node.githubLink}>
-                          <button class="ui black basic button mini">
-                            Github
-                          </button>
-                        </Link>
-                        <Link>
-                          <button class="ui green basic button mini">
-                            View Live
-                          </button>
-                        </Link>
-                      </div>
+                    <div class="description">
+                      <p>
+                        {documentToReactComponents(edge.node.description.json)}
+                      </p>
+                    </div>
+                    <div class="extra">
+                      <Link to={edge.node.githubLink}>
+                        <button class="ui black basic button mini">
+                          Github
+                        </button>
+                      </Link>
+                      <Link>
+                        <button class="ui green basic button mini">
+                          View Live
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            )
-         
-          })}
+            </div>
+          )
+        })}
       </Layout>
     </div>
   )
