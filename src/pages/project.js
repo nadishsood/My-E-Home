@@ -45,17 +45,14 @@ const ProjectPage = (props) => {
 
         <h1 className={projectStyles.projectHeader}>Projects</h1>
 
-        <p>
-          I'm a graduate Computer Science student at{" "}
-          <span>University of Florida </span> in Gainesville. 
-          I've been working hard to build skills across the spectrum of web, 
-          algorithms, databases, networks and security. 
+        <p> 
+          My projects represent work across
+          Front-end, Back-end, User-Experience design, Databases and Security. 
         </p>
         <p>
-          I love focusing on building robust, aesthetic and scalable web applications. 
-          These days the stack I'm using is React, Redux, Node.js and MongoDB. 
-          However, I'm open to and am always excited to work on any language, framework that I can get my hands on. 
+        
         </p>
+        <p>Here are my favorite projects: </p>
 
         {props.data.allContentfulProject.edges.map(edge => {
           return (

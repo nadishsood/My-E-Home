@@ -15,12 +15,35 @@
 
 .intro{
     margin-top: -10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     color: #798188;
     font-size: 0.9rem; 
+    width: 68%;
 }
 
 .hi{
     font-size: 1.75rem;
     color: #161718
+}
+.skillsImg{
+    margin-top: 30px !important;
+    height: 60px;
+    width: 2em;
+    display: none;
+}
+.subHeader{
+    font-size: 15px !important;
+    color: #798188;
+    font-weight: 500 !important;
+}
+.skillName{
+    margin-top: 10px;
+    margin-right: 20px
+}
+
+.skillArray{
+    padding-bottom: 20px !important;
+}
+.indSkill{
+   
 }

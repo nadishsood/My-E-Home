@@ -43,12 +43,16 @@ const IndexPage = () => {
       
       
       return (
-        <div className={`${indexStyles.skill} item`}>
-          <img className="ui avatar image" src={url}></img>
-          <div className="content">
-            {/* <p className="gg">{node.name}</p> */}
-
-            <p className="header">{node.name}</p>
+        // <div class='item'>
+        //   <img class="ui avatar image" src={url}></img>
+        //   <div class="content">
+        //     <p class="header">{node.name}</p>
+        //   </div>
+        // </div>
+        <div class="item" className={indexStyles.indSkill}>
+          <img class="ui avatar image" src={url} />
+          <div class="content">
+            <div class="header" className={indexStyles.skillName}>{node.name}</div>
           </div>
         </div>
       )
@@ -94,8 +98,14 @@ const IndexPage = () => {
 
     return combinedArray.map((arr)=>{
       return (
-        <div className={indexStyles.horizontalContainer}>
-          <div className="ui relaxed horizontal tiny list">
+        // <div className={indexStyles.horizontalContainer}>
+        //   <div className="ui horizontal tiny list">
+        //     {renderIndividualSkillList(arr)}
+        //   </div>
+        // </div>
+
+        <div class="item" className={indexStyles.skillArray}>
+          <div class="ui horizontal list">
             {renderIndividualSkillList(arr)}
           </div>
         </div>
@@ -110,14 +120,130 @@ const IndexPage = () => {
       <h2 className={indexStyles.hi}>Hi, I'm Nadish </h2>
 
       <p className={indexStyles.intro}>
-        I share my love of software-development, technology, photography <br />
-        and writing on this website. I'm currently pursuing my master's in <br />
-        Computer Science at the University of Florida. 
+        I share my love of software-development, technology, photography and
+        writing on this website. I'm currently pursuing my master's in Computer
+        Science at the University of Florida.
       </p>
-      <p className={indexStyles.skillsHeading}>My Tech Ninja Chops </p>
+
+      <h4 class="ui header">
+        {/* <img src={'/skillIcon.png'} className={indexStyles.skillsImg}/> */}
+        <div class="content">
+          Skills
+          <div class="sub header" className={indexStyles.subHeader}>
+            These are the current tools I use to build full-stack web
+            applications and solve problems using code.
+          </div>
+        </div>
+      </h4>
+
       <p>{/* Need a developer? <Link to="/contact">Contact me.</Link> */}</p>
-      <div className={indexStyles.container}>{displaySkillist()}</div>
-     
+      {/* <div className={indexStyles.container}>{displaySkillist()}</div> */}
+      {<div class="ui middle relaxed aligned list">{displaySkillist()}</div>}
+
+      {/* <div class="ui middle relaxed aligned divided list">
+        <div class="item">
+          <div class="ui horizontal list">
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
+              <div class="content">
+                <div class="header">Tom</div>
+                
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="ui avatar image"
+                src="/images/avatar/small/christian.jpg"
+              />
+              <div class="content">
+                <div class="header">Christian Rocha</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui horizontal list">
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
+              <div class="content">
+                <div class="header">Tom</div>
+                
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
+              <div class="content">
+                <div class="header">Tom</div>
+                
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
+              <div class="content">
+                <div class="header">Tom</div>
+                
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
+              <div class="content">
+                <div class="header">Tom</div>
+               
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="ui avatar image"
+                src="/images/avatar/small/christian.jpg"
+              />
+              <div class="content">
+                <div class="header">Christian Rocha</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ui horizontal list">
+            <div class="item">
+              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
+              <div class="content">
+                <div class="header">Tom</div>
+                
+              </div>
+            </div>
+            <div class="item">
+              <img
+                class="ui avatar image"
+                src="/images/avatar/small/christian.jpg"
+              />
+              <div class="content">
+                <div class="header">Christian Rocha</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      {/* <div class="item">
+    <img class="ui avatar image" src="/images/avatar/small/daniel.jpg" />
+    <div class="content">
+      <a class="header">Daniel Louise</a>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="/images/avatar/small/stevie.jpg" />
+    <div class="content">
+      <a class="header">Stevie Feliciano</a>
+    </div>
+  </div>
+  <div class="item">
+    <img class="ui avatar image" src="/images/avatar/small/elliot.jpg" />
+    <div class="content">
+      <a class="header">Elliot Fu</a>
+    </div>
+  </div> */}
     </Layout>
   )
 }

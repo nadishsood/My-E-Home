@@ -24,7 +24,6 @@ const Header = () => {
         </div>
 
         <div class="right menu">
-          
           <a class="item">
             <Link className={headerStyles.anchor} to="/project">
               Projects
@@ -33,6 +32,11 @@ const Header = () => {
           <a class=" item">
             <Link className={headerStyles.anchor} to="/blog">
               Blog
+            </Link>
+          </a>
+          <a class="item">
+            <Link className={headerStyles.anchor} to="/project">
+              About
             </Link>
           </a>
           <a class="item">
