@@ -35,7 +35,7 @@ const Header = () => {
             </Link>
           </a>
           <a class="item">
-            <Link className={headerStyles.anchor} to="/project">
+            <Link className={headerStyles.anchor} to="/about">
               About
             </Link>
           </a>
