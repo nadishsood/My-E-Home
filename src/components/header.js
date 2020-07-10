@@ -16,90 +16,106 @@ const Header = () => {
     `)
   return (
     <div className={headerStyles.headerContainer}>
-      <div class="ui text menu">
-        <div class="header item">
-          <Link className={headerStyles.anchor} to="/">
-            Nadish Sood
-          </Link>
-        </div>
-
-        <div class="right menu">
-          <a class="item">
-            <Link className={headerStyles.anchor} to="/project">
-              Projects
+      <div className={headerStyles.leftTitle}>
+        
+            <Link className={headerStyles.title} to="/">
+              {data.site.siteMetadata.title}
             </Link>
-          </a>
-          <a class=" item">
-            <Link className={headerStyles.anchor} to="/blog">
-              Blog
-            </Link>
-          </a>
-          <a class="item">
-            <Link className={headerStyles.anchor} to="/about">
-              About
-            </Link>
-          </a>
-          <a class="item">
-            <Link className={headerStyles.anchor} to="/contact">
-              Contact
-            </Link>
-          </a>
-
-          {/* <Link to="/blog" class="item">
-            Blog
-          </Link>
-
-          <Link to="/contact" class="item">
-            Contact
-          </Link> */}
-        </div>
+          
       </div>
-      {/* <header className={headerStyles.header}>
-        <h1>
-          <Link className={headerStyles.title} to="/">
-            {data.site.siteMetadata.title}
-          </Link>
-        </h1>
-        <ul className={headerStyles.navList}>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              to="/"
-              activeClassName={headerStyles.activeNavItem}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              to="/blog"
-              activeClassName={headerStyles.activeNavItem}
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              to="/project"
-              activeClassName={headerStyles.activeNavItem}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              to="/contact"
-              activeClassName={headerStyles.activeNavItem}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </header> */}
+      <div className={headerStyles.rightMenu}>
+          <ul className={headerStyles.navList}>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                to="/"
+                activeClassName={headerStyles.activeNavItem}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                to="/blog"
+                activeClassName={headerStyles.activeNavItem}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                to="/project"
+                activeClassName={headerStyles.activeNavItem}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                to="/contact"
+                activeClassName={headerStyles.activeNavItem}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+      </div>
     </div>
+    // <div className={headerStyles.headerContainer}>
+      
+    //   <header className={headerStyles.header}>
+    //     <div>
+          // <h1>
+          //   <Link className={headerStyles.title} to="/">
+          //     {data.site.siteMetadata.title}
+          //   </Link>
+          // </h1>
+    //     </div>
+    //     <div>
+          // <ul className={headerStyles.navList}>
+          //   <li>
+          //     <Link
+          //       className={headerStyles.navItem}
+          //       to="/"
+          //       activeClassName={headerStyles.activeNavItem}
+          //     >
+          //       Home
+          //     </Link>
+          //   </li>
+          //   <li>
+          //     <Link
+          //       className={headerStyles.navItem}
+          //       to="/blog"
+          //       activeClassName={headerStyles.activeNavItem}
+          //     >
+          //       Blog
+          //     </Link>
+          //   </li>
+          //   <li>
+          //     <Link
+          //       className={headerStyles.navItem}
+          //       to="/project"
+          //       activeClassName={headerStyles.activeNavItem}
+          //     >
+          //       Projects
+          //     </Link>
+          //   </li>
+          //   <li>
+          //     <Link
+          //       className={headerStyles.navItem}
+          //       to="/contact"
+          //       activeClassName={headerStyles.activeNavItem}
+          //     >
+          //       Contact
+          //     </Link>
+          //   </li>
+          // </ul>
+    //     </div>
+    //   </header>
+    // </div>
   )
 }
 

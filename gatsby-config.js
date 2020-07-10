@@ -11,7 +11,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Nadish Sood",
+    title: "NADISH SOOD",
     author: "Nadish Sood",
   },
   plugins: [
