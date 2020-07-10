@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
+    "babel-plugin-styled-components": "^1.10.7",
     "contentful": "^7.14.5",
     "fomantic-ui": "^2.8.6",
     "fomantic-ui-css": "^2.8.6",
@@ -23,6 +24,7 @@
     "gatsby-plugin-react-helmet": "^3.3.9",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-plugin-sharp": "^2.6.18",
+    "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-remark-images": "^3.3.17",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-contentful": "^2.3.24",
@@ -33,7 +35,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "semantic-ui-less": "^2.4.1",
-    "semantic-ui-react": "^0.88.2"
+    "semantic-ui-react": "^0.88.2",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
