@@ -15,6 +15,7 @@ module.exports = {
     author: "Nadish Sood",
   },
   plugins: [
+    `gatsby-plugin-styled-components`, 
     `gatsby-plugin-less`,
     "gatsby-plugin-react-helmet",
     {
@@ -46,12 +47,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
       },
     },
   ],
