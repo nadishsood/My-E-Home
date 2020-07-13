@@ -38,35 +38,42 @@ export const query = graphql`
          }
        `
 const ProjectPage = (props) => {
+
   return (
     <div>
       <Layout>
         <Head title="projects" />
 
-        <h2 className={projectStyles.projectHeader}>Projects</h2>
+        <h1 className={projectStyles.projectHeader}>Projects</h1>
 
         <p className={projectStyles.intro}>
-          My projects represent work across Front-end, Back-end, User-Experience
-          design, Databases and Security. Below are some of my favorite
-          projects:
+          My projects represent work across front-end, back-end, user-experience
+          design, databases and security.{" "}
+        </p>
+
+        <p className={projectStyles.subIntro}>
+          Below are some of my favorite projects:
         </p>
       </Layout>
       {props.data.allContentfulProject.edges.map(edge => {
         return (
           <div className={projectStyles.itemsContainer}>
-            <div className={projectStyles.projectBox}>
               <div class="ui items">
                 <div class="item">
                   <div class="image">
                     <img src={edge.node.image.file.url} />
                   </div>
                   <div class="content">
-                    <a class="header">{edge.node.name}</a>
+                    <a class="header">
+                      <div className={projectStyles.name}>{edge.node.name}</div>
+                    </a>
                     <div class="meta">
-                      <span>{edge.node.techUsed.techUsed}</span>
+                      <div className={projectStyles.techUsed}>
+                        {edge.node.techUsed.techUsed}
+                      </div>
                     </div>
                     <div class="description">
-                      <p>
+                      <p className={projectStyles.desc}>
                         {documentToReactComponents(edge.node.description.json)}
                       </p>
                     </div>
@@ -85,8 +92,8 @@ const ProjectPage = (props) => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+          //   </div>
+        
         )
       })}
     </div>

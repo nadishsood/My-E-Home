@@ -64,58 +64,7 @@ const Header = () => {
           </ul>
       </div>
     </div>
-    // <div className={headerStyles.headerContainer}>
-      
-    //   <header className={headerStyles.header}>
-    //     <div>
-          // <h1>
-          //   <Link className={headerStyles.title} to="/">
-          //     {data.site.siteMetadata.title}
-          //   </Link>
-          // </h1>
-    //     </div>
-    //     <div>
-          // <ul className={headerStyles.navList}>
-          //   <li>
-          //     <Link
-          //       className={headerStyles.navItem}
-          //       to="/"
-          //       activeClassName={headerStyles.activeNavItem}
-          //     >
-          //       Home
-          //     </Link>
-          //   </li>
-          //   <li>
-          //     <Link
-          //       className={headerStyles.navItem}
-          //       to="/blog"
-          //       activeClassName={headerStyles.activeNavItem}
-          //     >
-          //       Blog
-          //     </Link>
-          //   </li>
-          //   <li>
-          //     <Link
-          //       className={headerStyles.navItem}
-          //       to="/project"
-          //       activeClassName={headerStyles.activeNavItem}
-          //     >
-          //       Projects
-          //     </Link>
-          //   </li>
-          //   <li>
-          //     <Link
-          //       className={headerStyles.navItem}
-          //       to="/contact"
-          //       activeClassName={headerStyles.activeNavItem}
-          //     >
-          //       Contact
-          //     </Link>
-          //   </li>
-          // </ul>
-    //     </div>
-    //   </header>
-    // </div>
+
   )
 }
 

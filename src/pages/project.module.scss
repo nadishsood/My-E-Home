@@ -22,13 +22,18 @@ font-size: 13px;
    font-weight: bold;
 }
 .itemsContainer{
-    padding-bottom: 60px;
+    // border: 10px solid red;
+    padding: 0px 300px;
     width: 100%;
-    background: #F5F9FB
-
+    background: #F5F9FB;
+    // border-radius: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
 .projectHeader{
-    font-size: 1.75rem;
+    font-size: 4rem;
     color: #161718;
 }
 
@@ -36,12 +41,39 @@ font-size: 13px;
     margin-top: -10px;
     margin-bottom: 30px;
     color: #798188;
-    font-size: 0.9rem;
-    width: 68%;
+    font-size: 1.3rem;
+    width: 80%;
 }
 .projectBox{
-    height: 70vh;
-    width:70%;
+    height: 80vh;
+    // border: 2px solid black;
     margin: 0px auto;
-    padding: 100px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 0px 300px;
+    background: white;
+    border-radius: 30px;
+}
+
+.subIntro {
+    color: #798188;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.name{
+    font-size: 1.5rem !important;
+    padding-bottom: 20px;
+}
+.techUsed{
+    font-size: 1rem !important;
+    padding-bottom: 20px;
+}
+
+.desc{
+    font-size: 0.9rem !important;
+      text-align: justify;
+      padding-bottom: 30px;
+
 }

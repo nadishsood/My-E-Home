@@ -1,3 +1,7 @@
+body{
+font-family: "Open Sans" !important
+
+}
 .container{
     padding: 15px;
     background: #f9f9f9
@@ -15,14 +19,14 @@
 
 .intro{
     margin-top: -10px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     color: #798188;
-    font-size: 0.9rem; 
-    width: 68%;
+    font-size: 1.3rem; 
+    width: 80%;
 }
 
 .hi{
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: #161718
 }
 .skillsImg{
@@ -32,7 +36,7 @@
     display: none;
 }
 .subHeader{
-    font-size: 15px !important;
+    font-size: 1.1rem !important;
     color: #798188;
     font-weight: 500 !important;
 }
@@ -44,6 +48,4 @@
 .skillArray{
     padding-bottom: 20px !important;
 }
-.indSkill{
-   
-}
+

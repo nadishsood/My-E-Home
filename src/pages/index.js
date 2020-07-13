@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { graphql, useStaticQuery, Link } from "gatsby";
+import "typeface-open-sans";
+// import "typeface-grenze";
 
 import Layout from "./../components/layout";
 import Head from '../components/head';
@@ -127,7 +129,7 @@ const IndexPage = () => {
         Science at the University of Florida.
       </p>
 
-      <h4 class="ui header">
+      <h2 class="ui header">
         {/* <img src={'/skillIcon.png'} className={indexStyles.skillsImg}/> */}
         <div class="content">
           Skills
@@ -136,10 +138,9 @@ const IndexPage = () => {
             applications and solve problems using code.
           </div>
         </div>
-      </h4>
+      </h2>
 
-      <p>{/* Need a developer? <Link to="/contact">Contact me.</Link> */}</p>
-      {/* <div className={indexStyles.container}>{displaySkillist()}</div> */}
+      
       {<div class="ui middle relaxed aligned list">{displaySkillist()}</div>}
 
       {/* <div class="ui middle relaxed aligned divided list">
