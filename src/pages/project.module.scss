@@ -18,18 +18,17 @@
 .techUsed1 {
 font-size: 13px;
    margin-bottom: 30px;
-   color: #6886c5;
+   color: #64ffda;
    font-weight: bold;
 }
 .itemsContainer{
-    // border: 10px solid red;
-    padding: 0px 300px;
+    
     width: 100%;
-    background: #F5F9FB;
-    // border-radius: 20px;
-    height: 100vh;
     display: flex;
-    align-items: center;
+    // align-items: space-around;
+    border-radius: 50px;
+    padding: 50px;
+    // justify-content: center;
 }
 
 .projectHeader{
@@ -44,17 +43,16 @@ font-size: 13px;
     font-size: 1.3rem;
     width: 80%;
 }
-.projectBox{
-    height: 80vh;
-    // border: 2px solid black;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    padding: 0px 300px;
-    background: white;
+
+.cont{
     border-radius: 30px;
+    display: flex;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+
+    
 }
+
 
 .subIntro {
     color: #798188;
@@ -69,11 +67,27 @@ font-size: 13px;
 .techUsed{
     font-size: 1rem !important;
     padding-bottom: 20px;
+    color: #64ffda;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .desc{
     font-size: 0.9rem !important;
       text-align: justify;
       padding-bottom: 30px;
+
+}
+.videoContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+.video{
+    border-radius: 20px;
+        height: 500px;
+width: 500px;
+
 
 }
