@@ -61,7 +61,7 @@ font-size: 13px;
 }
 
 .name{
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     padding-bottom: 20px;
 }
 .techUsed{
@@ -82,12 +82,35 @@ font-size: 13px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-
 }
 .video{
     border-radius: 20px;
-        height: 500px;
-width: 500px;
+    height: 500px;
+    width: 500px;
 
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .videoContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .video {
+        border-radius: 20px;
+        height: 400px;
+        width: 300px;
+        position: relative;
+        left: -5px;
+
+
+    }
+
+    .itemsContainer {
+        position: relative;
+        left: -22px;
+    }
 
 }
