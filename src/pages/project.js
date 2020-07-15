@@ -51,9 +51,9 @@ const ProjectPage = (props) => {
           design, databases and security.{" "}
         </p>
 
-        <p className={projectStyles.subIntro}>
+        {/* <p className={projectStyles.subIntro}>
           Below are some of my favorite projects:
-        </p>
+        </p> */}
 
         {props.data.allContentfulProject.edges.map(edge => {
           return (
