@@ -26,13 +26,13 @@ const Header = () => {
       <div className={headerStyles.rightMenu}>
           <ul className={headerStyles.navList}>
             <li>
-              <Link
+              {/* <Link
                 className={headerStyles.navItem}
                 to="/"
                 activeClassName={headerStyles.activeNavItem}
               >
                 Home
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link

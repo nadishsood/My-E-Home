@@ -50,22 +50,14 @@ const IndexPage = () => {
       
       
       return (
-        // <div class='item'>
-        //   <img class="ui avatar image" src={url}></img>
-        //   <div class="content">
-        //     <p class="header">{node.name}</p>
-        //   </div>
-        // </div>
-        
-          <div class="item">
-            <img class="ui avatar image" src={url} />
-            <div class="content">
-              <div class="header" className={indexStyles.skillName}>
-                {node.name}
-              </div>
+        <div class="item">
+          <img class="ui avatar image" src={url} />
+          <div class="content">
+            <div class="header" className={indexStyles.skillName}>
+              <span className={indexStyles.skillColor}>{node.name}</span>
             </div>
           </div>
-        
+        </div>
       )
     })
   }
@@ -109,11 +101,7 @@ const IndexPage = () => {
 
     return combinedArray.map((arr)=>{
       return (
-        // <div className={indexStyles.horizontalContainer}>
-        //   <div className="ui horizontal tiny list">
-        //     {renderIndividualSkillList(arr)}
-        //   </div>
-        // </div>
+       
 
         <div class="item" className={indexStyles.skillArray}>
           <div class="ui horizontal list">
@@ -139,7 +127,6 @@ const IndexPage = () => {
       
 
       <h2 class="ui header">
-        {/* <img src={'/skillIcon.png'} className={indexStyles.skillsImg}/> */}
         <div class="content">
           Skills
           <div class="sub header" className={indexStyles.subHeader}>
@@ -153,110 +140,7 @@ const IndexPage = () => {
         {<div class="ui middle relaxed aligned list">{displaySkillist()}</div>}
       </div>
 
-      {/* <div class="ui middle relaxed aligned divided list">
-        <div class="item">
-          <div class="ui horizontal list">
-            <div class="item">
-              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
-              <div class="content">
-                <div class="header">Tom</div>
-                
-              </div>
-            </div>
-            <div class="item">
-              <img
-                class="ui avatar image"
-                src="/images/avatar/small/christian.jpg"
-              />
-              <div class="content">
-                <div class="header">Christian Rocha</div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="ui horizontal list">
-            <div class="item">
-              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
-              <div class="content">
-                <div class="header">Tom</div>
-                
-              </div>
-            </div>
-            <div class="item">
-              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
-              <div class="content">
-                <div class="header">Tom</div>
-                
-              </div>
-            </div>
-            <div class="item">
-              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
-              <div class="content">
-                <div class="header">Tom</div>
-                
-              </div>
-            </div>
-            <div class="item">
-              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
-              <div class="content">
-                <div class="header">Tom</div>
-               
-              </div>
-            </div>
-            <div class="item">
-              <img
-                class="ui avatar image"
-                src="/images/avatar/small/christian.jpg"
-              />
-              <div class="content">
-                <div class="header">Christian Rocha</div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="ui horizontal list">
-            <div class="item">
-              <img class="ui avatar image" src="/images/avatar/small/tom.jpg" />
-              <div class="content">
-                <div class="header">Tom</div>
-                
-              </div>
-            </div>
-            <div class="item">
-              <img
-                class="ui avatar image"
-                src="/images/avatar/small/christian.jpg"
-              />
-              <div class="content">
-                <div class="header">Christian Rocha</div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div class="item">
-    <img class="ui avatar image" src="/images/avatar/small/daniel.jpg" />
-    <div class="content">
-      <a class="header">Daniel Louise</a>
-    </div>
-  </div>
-  <div class="item">
-    <img class="ui avatar image" src="/images/avatar/small/stevie.jpg" />
-    <div class="content">
-      <a class="header">Stevie Feliciano</a>
-    </div>
-  </div>
-  <div class="item">
-    <img class="ui avatar image" src="/images/avatar/small/elliot.jpg" />
-    <div class="content">
-      <a class="header">Elliot Fu</a>
-    </div>
-  </div> */}
+      
     </Layout>
   )
 }
