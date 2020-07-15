@@ -8,15 +8,17 @@ body {
 
 .post{
     margin: 1rem 0;
+    
     a{
-        background: #f4f4f4;
         color: #000000;
         display: block;
         padding: 1rem;
         text-decoration: none;
+        border-radius: 20px;
     }
     a:hover{
-        background: #e4e4e4;
+        background:#f6f8fa;
+
     }
     h2{
         margin-bottom: 0;
@@ -30,7 +32,7 @@ body {
 
 .header{
     font-size: 4rem;
-    color: red;
+    color:#161718;
     font-family: "Open Sans" !important
 }
 

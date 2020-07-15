@@ -58,7 +58,7 @@ const Header = () => {
                 to="/contact"
                 activeClassName={headerStyles.activeNavItem}
               >
-                Contact
+                About
               </Link>
             </li>
           </ul>

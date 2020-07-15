@@ -21,13 +21,15 @@ font-family: "Open Sans" !important
     margin-top: -10px;
     margin-bottom: 60px;
     color: #798188;
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
     width: 80%;
+
 }
 
 .hi{
     font-size: 2rem;
-    color: #161718
+    color: #161718;
+    
 }
 .skillsImg{
     margin-top: 30px !important;
@@ -42,10 +44,22 @@ font-family: "Open Sans" !important
 }
 .skillName{
     margin-top: 10px;
-    margin-right: 20px
+    margin-right: 20px;
+    color: #64ffda;
+    font-weight: 600;
+    font-size: 1.1rem !important ;
 }
 
 .skillArray{
     padding-bottom: 20px !important;
 }
+.listContainer{
+    background: #0a192f;
+    padding: 20px;
+    border-radius: 20px;
+    color: white !important;
+}
 
+// .indSkill{
+//     font-weight: bold;
+// }

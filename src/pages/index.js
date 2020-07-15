@@ -2,6 +2,9 @@ import React from 'react';
 
 import { graphql, useStaticQuery, Link } from "gatsby";
 import "typeface-open-sans";
+import "@acidwave/typeface-marck-script"
+
+// require("@acidwave/typeface-marck-script")
 // import "typeface-grenze";
 
 import Layout from "./../components/layout";
@@ -53,12 +56,16 @@ const IndexPage = () => {
         //     <p class="header">{node.name}</p>
         //   </div>
         // </div>
-        <div class="item" className={indexStyles.indSkill}>
-          <img class="ui avatar image" src={url} />
-          <div class="content">
-            <div class="header" className={indexStyles.skillName}>{node.name}</div>
+        
+          <div class="item">
+            <img class="ui avatar image" src={url} />
+            <div class="content">
+              <div class="header" className={indexStyles.skillName}>
+                {node.name}
+              </div>
+            </div>
           </div>
-        </div>
+        
       )
     })
   }
@@ -121,13 +128,15 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="home" />
-      <h2 className={indexStyles.hi}>Hi, I'm Nadish </h2>
+      
+        <h2 className={indexStyles.hi}>Hi, I'm Nadish </h2>
 
-      <p className={indexStyles.intro}>
-        I share my love of software-development, technology, photography and
-        writing on this website. I'm currently pursuing my master's in Computer
-        Science at the University of Florida.
-      </p>
+        <p className={indexStyles.intro}>
+          I share my love of software-development, technology, photography and
+          writing on this website. I'm currently pursuing my master's in
+          Computer Science at the University of Florida.
+        </p>
+      
 
       <h2 class="ui header">
         {/* <img src={'/skillIcon.png'} className={indexStyles.skillsImg}/> */}
@@ -140,8 +149,9 @@ const IndexPage = () => {
         </div>
       </h2>
 
-      
-      {<div class="ui middle relaxed aligned list">{displaySkillist()}</div>}
+      <div className={indexStyles.listContainer}>
+        {<div class="ui middle relaxed aligned list">{displaySkillist()}</div>}
+      </div>
 
       {/* <div class="ui middle relaxed aligned divided list">
         <div class="item">
