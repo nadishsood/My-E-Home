@@ -103,7 +103,6 @@ const ProjectPage = (props) => {
                     </div>
                   </div>
                 </div>
-                //{" "}
               </div>
             </div>
           )

@@ -1,3 +1,26 @@
 .footer{
     margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.footerList{
+    
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        
+
+}
+.navItem{
+    padding: 5px;
+    
+}
+
+.anchor {
+    color: #a6a8ab;
+    font-weight: bold;
+    font-size: 0.9rem
 }
