@@ -5,17 +5,6 @@ import Layout from '../components/layout';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Head from '../components/head';
 
-//gatsby grabs the query, runs it and provides the response as a prop to our component
-// export const query = graphql`
-// query($slug: String!){
-//     markdownRemark(fields: {slug: {eq: $slug}}){
-//         frontmatter{
-//             title 
-//             date
-//         }
-//         html
-//     } 
-// }`
 
 export const query = graphql`
     query($slug: String!){

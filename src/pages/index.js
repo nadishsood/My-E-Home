@@ -116,15 +116,14 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="home" />
-      
-        <h2 className={indexStyles.hi}>Hi, I'm Nadish </h2>
 
-        <p className={indexStyles.intro}>
-          I share my love of software-development, technology, photography and
-          writing on this website. I'm currently pursuing my master's in
-          Computer Science at the University of Florida.
-        </p>
-      
+      <h2 className={indexStyles.hi}>Hi, I'm Nadish </h2>
+
+      <p className={indexStyles.intro}>
+        I share my love of software-development, technology, photography and
+        writing on this website. I'm currently pursuing my master's in
+        <span> Computer Science</span> at the <span>University of Florida.</span>
+      </p>
 
       <h2 class="ui header">
         <div class="content">
@@ -139,8 +138,6 @@ const IndexPage = () => {
       <div className={indexStyles.listContainer}>
         {<div class="ui middle relaxed aligned list">{displaySkillist()}</div>}
       </div>
-
-      
     </Layout>
   )
 }

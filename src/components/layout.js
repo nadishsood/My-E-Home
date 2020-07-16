@@ -2,7 +2,6 @@ import React from 'react';
 
 import Header from "./../components/header";
 import Footer from "./../components/footer";
-import { Container } from 'semantic-ui-react';
 
 import '../styles/index.scss';
 

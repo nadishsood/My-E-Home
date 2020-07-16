@@ -15,11 +15,11 @@ const AboutPage = () => {
           <section className={aboutStyles.about}>
             <h1>Hi, I'm Nadish!</h1>
             <h4>
-              I'm a Computer Science graduate student at the University of
-              Florida.{" "}
+              I'm a Computer Science graduate student at the{" "}
+              <span className={aboutStyles.uniName}>University of Florida.</span>{" "}
             </h4>
 
-            <div>
+            <div className={aboutStyles.content}>
               <p>
                 Having a sound CS background, and an affinity to build and
                 create, I have loved building projects across front-end,
@@ -39,8 +39,8 @@ const AboutPage = () => {
                 I'll be graduating in May 2020. I'm open to opportunities in
                 Software development roles for either an upcoming fall
                 internship in 2020 or a full-time role in 2021.
-                </p>
-                 {/* What I bring to the
+              </p>
+              {/* What I bring to the
                 table:
                 <ul>
                   <li>fsdfsf</li>
@@ -49,17 +49,17 @@ const AboutPage = () => {
                   <li>fsdfsf</li>
                   <li>fsdfsf</li>
                 </ul> */}
-              
-              <h5>About this website: </h5>
-              <p>
-                I made this website in an attempt to consolidate my work and
-                online presence at one place. My earlier website was built on
-                Node.js, Express and used MongoDB as a database and was kind of
-                slow. However, I built this one using Gatsby.js, Contentful as
-                a headless CMS, and hosted it on Netlify. It is blazingly fast
-                as a result and I'm happy with how it came out.
-              </p>
-              <p></p>
+              <div className={aboutStyles.subContent}>
+                <h5>About this website: </h5>
+                <p>
+                  I made this website in an attempt to consolidate my work and
+                  online presence at one place. My earlier website was built on
+                  Node.js, Express and used MongoDB as a database and was kind
+                  of slow. However, I built this one using Gatsby.js, Contentful
+                  as a headless CMS, and hosted it on Netlify. It is blazingly
+                  fast as a result and I'm happy with how it came out.
+                </p>
+              </div>
             </div>
           </section>
           <section className={aboutStyles.sideBar}>
