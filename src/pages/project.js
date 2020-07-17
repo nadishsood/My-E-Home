@@ -23,6 +23,7 @@ export const query = graphql`
                    json
                  }
                  githubLink
+                 youtubeLink
                  image {
                    file {
                      url
@@ -64,7 +65,7 @@ const ProjectPage = (props) => {
                     <div className={projectStyles.videoContainer}>
                       <iframe
                         className={projectStyles.video}
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                        src={edge.node.youtubeLink}
                       ></iframe>
                     </div>
                     <a class="header">
@@ -104,3 +105,7 @@ const ProjectPage = (props) => {
 }
 
 export default ProjectPage
+
+
+
+
