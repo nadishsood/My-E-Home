@@ -65,7 +65,8 @@ const ProjectPage = (props) => {
                     <div className={projectStyles.videoContainer}>
                       <iframe
                         className={projectStyles.video}
-                        src={edge.node.youtubeLink}
+                        src={`${edge.node.youtubeLink}?rel=0&amp;controls=0&amp;showinfo=0`}
+                        frameborder="0"
                       ></iframe>
                     </div>
                     <a class="header">
