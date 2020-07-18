@@ -50,13 +50,17 @@ const IndexPage = () => {
       
       
       return (
-        <div class="item">
-          <img class="ui avatar image" src={url} />
-          <div class="content">
-            <div class="header" className={indexStyles.skillName}>
-              <span className={indexStyles.skillColor}>{node.name}</span>
-            </div>
-          </div>
+        // <div class="item">
+        //   <img class="ui avatar image" src={url} />
+        //   <div class="content">
+        //     <div class="header" className={indexStyles.skillName}>
+        //       <span className={indexStyles.skillColor}>{node.name}</span>
+        //     </div>
+        //   </div>
+        // </div>
+        <div className={indexStyles.skill}>
+          <img src={url}></img>
+          <p>{node.name}</p>
         </div>
       )
     })
@@ -98,13 +102,36 @@ const IndexPage = () => {
     cs=cs.reverse();
     combinedArray.push(language, fe, be, db, cs);
 
-
+    let count = 0;
+    let category = "";
     return combinedArray.map((arr)=>{
+      switch (count) {
+        case 0:
+          category = "Languages"
+          break
+        case 1:
+          category = "Front-end"
+          break
+        case 2:
+          category = "Back-end"
+          break
+        case 3:
+          category = "Databases"
+          break
+        case 4:
+          category = "Others"
+          break
+        default:
+          break
+      }
+      count+=1;
+      
       return (
        
+        <div className={`${indexStyles.skillContainer}`}>
 
-        <div class="item" className={indexStyles.skillArray}>
-          <div class="ui horizontal list">
+          <div className={indexStyles.categoryName}>{category}</div>
+          <div className={indexStyles.innerContainer}>
             {renderIndividualSkillList(arr)}
           </div>
         </div>
@@ -122,7 +149,8 @@ const IndexPage = () => {
       <p className={indexStyles.intro}>
         I share my love of software-development, technology, photography and
         writing on this website. I'm currently pursuing my master's in
-        <span> Computer Science</span> at the <span>University of Florida.</span>
+        <span> Computer Science</span> at the{" "}
+        <span>University of Florida.</span>
       </p>
 
       <h2 class="ui header">
@@ -135,8 +163,77 @@ const IndexPage = () => {
         </div>
       </h2>
 
-      <div className={indexStyles.listContainer}>
-        {<div class="ui middle relaxed aligned list">{displaySkillist()}</div>}
+      <div className={`${indexStyles.listContainer}`}>
+        {<div>{displaySkillist()}</div>}
+        {/* <div className={`${indexStyles.skillContainer}`}>
+          <div>Languages</div>
+          <div className={indexStyles.innerContainer}>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+        <div className={`${indexStyles.skillContainer}`}>
+          <div>Languages</div>
+          <div className={indexStyles.innerContainer}>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+
+          </div>
+        </div>
+        <div className={`${indexStyles.skillContainer}`}>
+          <div>Languages</div>
+          <div className={indexStyles.innerContainer}>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+        <div className={`${indexStyles.skillContainer}`}>
+          <div>Languages</div>
+          <div className={indexStyles.innerContainer}>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+            <div className={indexStyles.skill}>
+              <img src={`github.png`}></img>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div> */}
       </div>
     </Layout>
   )
