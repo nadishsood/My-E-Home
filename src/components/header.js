@@ -46,7 +46,7 @@ const Header = () => {
             <li>
               <Link
                 className={headerStyles.navItem}
-                to="/project"
+                to="/projectList"
                 activeClassName={headerStyles.activeNavItem}
               >
                 Projects
