@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import projectListStyles from "./projectList.module.scss"
 
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
@@ -40,25 +41,29 @@ const ProjectPage = props => {
     <Layout>
       <Head title="projects" />
 
-      <h1>Projects</h1>
+      <h1 className={projectListStyles.header}>Projects</h1>
 
-      <p>
+      <p className={projectListStyles.intro}>
         My projects represent work across <span>front-end</span>,{" "}
         <span> back-end</span>,<span> user-experience design</span>,{" "}
         <span> databases</span> and <span> security</span>.{" "}
       </p>
 
-      {/* <p className={projectStyles.subIntro}>
-          Below are some of my favorite projects:
-        </p> */}
 
-      <ol>
+      <ol className={projectListStyles.projects}>
         {data.allContentfulProject.edges.map(edge => {
           return (
-            <li>
+            <li className={projectListStyles.project}>
               <Link to={`/projectList/${edge.node.pSlug}`}>
-                <h2>{edge.node.name}</h2>
-                <p>{edge.node.priority}</p>
+                <p className={projectListStyles.projectName}>
+                  {edge.node.name}
+                </p>
+                <p className={projectListStyles.projectDesc}>
+                  {documentToReactComponents(edge.node.description.json)}
+                </p>
+                <p className={projectListStyles.techUsed}>
+                  {edge.node.techUsed.techUsed}
+                </p>
               </Link>
             </li>
           )

@@ -1,0 +1,72 @@
+.projects {
+    list-style-type: none;
+    margin: 0;
+}
+
+li{
+    margin-bottom: 50px;
+}
+
+.projectDesc{
+    font-size: 0.9rem;
+    color: black;
+    margin-top: -22px;
+
+
+}
+.techUsed{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #a6a8ab;
+    margin-top: -22px;
+
+    
+}
+
+.header {
+    font-size: 4rem;
+    color: #161718;
+    font-family: "Open Sans" !important
+}
+.intro {
+    margin-top: -10px;
+    margin-bottom: 80px;
+    color: #798188;
+    font-size: 1.3rem;
+    width: 80%;
+}
+.intro span {
+    color: orange;
+}
+.projectName{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+  .project {
+      margin: 1rem 0;
+
+      a {
+          
+          display: block;
+          padding: 1rem;
+          text-decoration: none;
+          border-radius: 20px;
+      }
+
+      a:hover {
+          background: #f6f8fa;
+
+      }
+
+  }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+.intro{
+    margin-bottom: 60px;
+}
+
+    
+    }

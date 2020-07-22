@@ -1,6 +1,4 @@
-body {
-    
-}
+
 .posts{
     list-style-type: none;
     margin: 0;
@@ -20,14 +18,7 @@ body {
         background:#f6f8fa;
 
     }
-    h2{
-        margin-bottom: 0;
-    }
-    p{
-        color: #777777;
-        font-size: .8rem;
-        font-style: italic;
-    }
+   
 }
 
 .header{
@@ -36,4 +27,15 @@ body {
     font-family: "Open Sans" !important
 }
 
+.postName{
+    font-size: 1.2rem;
+    color: #4183C4;
+    font-weight: bold;
+}
+.postDate{
+    font-size: 0.8rem;
+    font-style: italic;
+    color:#a6a8ab;
+    margin-top: -15px;
+}
 
