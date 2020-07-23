@@ -9,8 +9,7 @@ import "@acidwave/typeface-marck-script"
 
 import Layout from "./../components/layout";
 import Head from '../components/head';
-import { Container, Item } from 'semantic-ui-react';
-import styled from "styled-components"
+
 
 
 import indexStyles from "./index.module.scss"
