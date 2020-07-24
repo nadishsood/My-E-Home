@@ -16,7 +16,9 @@ const AboutPage = () => {
             <h1>Hi, I'm Nadish!</h1>
             <h4>
               I'm a Computer Science graduate student at the{" "}
-              <span className={aboutStyles.uniName}>University of Florida.</span>{" "}
+              <span className={aboutStyles.uniName}>
+                University of Florida.
+              </span>{" "}
             </h4>
 
             <div className={aboutStyles.content}>
@@ -65,6 +67,13 @@ const AboutPage = () => {
           <section className={aboutStyles.sideBar}>
             {/* <div className={aboutStyles.photo}>Photo</div> */}
             {/* <div className={aboutStyles.stats}>Stats</div> */}
+            <div>
+              <img
+                className={`${aboutStyles.image} bShadow bShadow-8`}
+                src={"/me.jpg"}
+                alt="Logo"
+              />
+            </div>
           </section>
         </div>
       </Layout>
