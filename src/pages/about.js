@@ -38,9 +38,8 @@ const AboutPage = () => {
                 gym, partying with friends or wasting time on Twitter.
               </p>
               <p>
-                I'll be graduating in May 2020. I'm open to opportunities in
-                Software development roles for either an upcoming fall
-                internship in 2020 or a full-time role in 2021.
+                I'll be graduating in May 2021. I'm open to opportunities in
+                Software development/ Full-stack engineering positions starting January 2021. 
               </p>
               {/* What I bring to the
                 table:

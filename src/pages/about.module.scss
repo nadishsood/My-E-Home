@@ -36,7 +36,8 @@
 }
 .image{
     border-radius: 20px;
-    margin: 20px;
+    height: 300px;
+    margin-left: 100px;
 }
 
 
@@ -47,6 +48,13 @@
     }
     .sideBar{
         order: 1
+    }
+    .image{
+        border-radius: 5px;
+    height: 300px;
+    margin: 0 auto;
+    margin-left: 30%;
+    margin-bottom: 30px
     }
 
 
