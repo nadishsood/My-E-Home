@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
+
 import "typeface-open-sans"
 
 import Layout from "./../components/layout";
